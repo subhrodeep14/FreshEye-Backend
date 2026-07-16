@@ -3,7 +3,8 @@ import FormData from "form-data";
 import fs from "fs";
 
 const PYTHON_API =
-  process.env.PYTHON_API || "http://127.0.0.1:8000";
+  process.env.PYTHON_API ||
+  "https://fresheye-ml.onrender.com";
 
 export const predictWithPython = async (
   imagePath: string
